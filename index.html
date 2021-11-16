@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <div id="calc_container" class="calculator">
+            <div id="calc_display" class="display">
+                <div id="upbar">
+                    <div id="window_btn" class="win_btn">
+                        <div id="close_btn" class="win_btn_el"></div>
+                        <div id="minimize_btn" class="win_btn_el"></div>
+                        <div id="maximize_btn" class="win_btn_el"></div>
+                    </div>
+                    <div id="light_dark_mode" class="light_dark">
+                        <label class="switch">
+                            <input id="ld_checkbox" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+               
+                <div id="calc_input" class="formula">
+                    <p id="print_formula"></p>
+                </div>
+                <div id="result_container" class="results">
+                    <p id="print_result" maxlength="3">0</p>
+                </div>
+            </div>
+
+            <div id="calc_keys" class="calc_keyboard">
+                <section class="row">
+                    <button id="clear_op" class="key_special" data-value="All-clear" style="background-color: rgba(255, 105, 133, 0.2); color: rgb(255, 105, 133);">C</button>
+                    <button id="inv_op" class="key_special" data-value="inversor">+/-</button>
+                    <button id="per_op" class="key_special" data-value="percentage">%</button>
+                    <button id="divide_op" class="key_operator" data-value="divide">/</button>
+                </section>
+
+                <section class="row">
+                    <button class="key_number central_btn" data-value="7">7</button>
+                    <button class="key_number central_btn" data-value="8">8</button>
+                    <button class="key_number central_btn" data-value="9" >9</button>
+                    <button id="mult_op" class="key_operator" data-value="multiply">x</button>
+                </section>
+
+                <section class="row">
+                    <button class="key_number central_btn" data-value="4">4</button>
+                    <button class="key_number central_btn" data-value="5">5</button>
+                    <button class="key_number central_btn" data-value="6">6</button>
+                    <button id="sub_op" class="key_operator" data-value="subtract">-</button>
+                </section>
+
+                <section class="row">
+                    <button class="key_number central_btn" data-value="1">1</button>
+                    <button class="key_number central_btn" data-value="2">2</button>
+                    <button class="key_number central_btn" data-value="3">3</button>
+                    <button id="add_op" class="key_operator" data-value="add">+</button>
+                </section>
+
+                <section class="row">
+                    <button class="key_number central_btn" data-value="0" style="width: 50%;">0</button>
+                    <button id="dec_op" class="key_special central_btn" data-value="decimals">.</button>
+                    <button id="equ_op" class="key_special" data-value="equal" style="width: 25%; background-color: rgb(92, 215, 141);">=</button>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

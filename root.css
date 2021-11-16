@@ -1,0 +1,86 @@
+/* RESET CSS ------------ */
+
+html,
+body,
+div,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+img,
+ol,
+ul,
+li,
+input,
+label,
+select,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+footer,
+header,
+menu,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  list-style: none;
+  border: 0;
+}
+
+body {
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 3.2em;
+  color: rgb(28, 28, 28);
+  font-family: "Quicksand", sans-serif;
+  transition: 0.2s;
+}
+
+#print_formula {
+  font-size: 1.2em;
+  color: rgb(123, 123, 123);
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+}
+
+button {
+  width: 25%;
+  height: 90%;
+  margin: 4px;
+  border-radius: 30px;
+  font-size: 1.4em;
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  font-size: 1.6em;
+  opacity: 0.8;
+}
